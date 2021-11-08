@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 :root {
-  --primary-color: #047aed;
+  --primary-color: #003366;
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
   --light-color: #f4f4f4;
@@ -72,6 +72,10 @@ img {
 .showcase {
   height: 400px;
   background-color: var(--primary-color);
+  background-image: url("TEST1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #fff;
   position: relative;
 }
@@ -115,18 +119,6 @@ img {
 
 .showcase-form input:focus {
   outline: none;
-}
-
-.showcase::before,
-.showcase::after {
-  content: "";
-  position: absolute;
-  height: 100px;
-  bottom: -70px;
-  right: 0;
-  left: 0;
-  background: #fff;
-  transform: skewY(-3deg);
 }
 
 /* Stats*/

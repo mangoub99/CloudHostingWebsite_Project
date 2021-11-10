@@ -8,6 +8,10 @@
   --error-color: #d9345f;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -81,6 +85,7 @@ img {
   margin: 0;
   max-width: none;
 }
+
 /*navbar styling test*/
 .checkbtn {
   font-size: 30px;
@@ -93,6 +98,26 @@ img {
   display: none;
 }
 /*navbar styling test*/
+
+/* Scroll up button style*/
+#btnScrollToTop {
+  position: fixed;
+  right: 50px;
+  bottom: 175px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 100;
+}
+#btnScrollToTop:hover {
+  background: #778899;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.55);
+}
+/* Scroll up button style*/
 
 /*Showcase */
 .showcase {

@@ -146,6 +146,7 @@ img {
 }
 
 .showcase-form {
+  display: none;
   position: relative;
   top: 60px;
   height: 350px;

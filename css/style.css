@@ -146,7 +146,6 @@ img {
 }
 
 .showcase-form {
-  display: none;
   position: relative;
   top: 60px;
   height: 350px;
@@ -175,7 +174,7 @@ img {
 
 /* Stats*/
 .stats {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .stats-heading {

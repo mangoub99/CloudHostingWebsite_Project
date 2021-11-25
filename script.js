@@ -1,12 +1,37 @@
-/*Scroll up functionality  */
+/*Scroll up functionality  */ /////////////////////
 const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
 btnScrollToTop.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
-/*Scroll up functionality  */
 
-/*Reviews Box funcionality  */
+/*Stats incrementing counter functionality*/ /////////////////////
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const c = +counter.innerText;
+
+    const increment = target / 200;
+
+    if (c < target) {
+      counter.innerText = `${Math.ceil(c + increment)}`;
+      setTimeout(updateCounter, 10);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  updateCounter();
+});
+/*Stats incrementing counter functionality*/ /////////////////////
+
+/*Scroll up functionality  */ /////////////////////
+
+/*Reviews Box funcionality  */ //////////////////////////////////////////////////
 const testimonialsContainer = document.querySelector(".testimonials-container");
 const testimonial = document.querySelector(".testimonial");
 const userImage = document.querySelector(".user-image");
@@ -78,4 +103,4 @@ function updateTestimonial() {
 }
 
 setInterval(updateTestimonial, 10000);
-/*Reviews Box funcionality  */
+/*Reviews Box funcionality  */ //////////////////////////////////////////////////

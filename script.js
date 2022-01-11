@@ -27,7 +27,7 @@ counters.forEach((counter) => {
 
   updateCounter();
 });
-/*Stats incrementing counter functionality*/ /////////////////////
+/*Stats incrementing counter functionality*//////////////////////
 
 /*Scroll up functionality  */ /////////////////////
 
